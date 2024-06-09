@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sell2You</title>
+    <link rel="icon" href="./favicon-store-removebg.png">
+    <link rel="stylesheet" href="store_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script defer src="front-script.js"></script>
+</head>
+<body>
+    <div class="header-wrap">
+        <a href="./home.html">
+            <img src="./favicon-store-removebg.png" alt="logo-picture">
+            <span class="store-name">Sell2You</span>
+        </a>
+
+        <div class="cart">
+            <span class="cart-amount">0</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+        </div>
+    </div>
+
+    <div class="main-content-wrapper">
+        <div class="filters-wrap">
+            <div class="search-filter">
+                <input class="search-input" type="text" placeholder="Search">
+            </div>
+            <div class="category-filter">
+                <span class="filter-title">Category</span>
+                <span class="each-category selected">All</span>
+                <span class="each-category">Home</span>
+                <span class="each-category">Electronics</span>
+                <span class="each-category">Office</span>
+                <span class="each-category">Garden</span>
+                <span class="each-category">Beauty & Personal Care</span>
+                <span class="each-category">Handmade</span>
+                <span class="each-category">Furniture</span>
+                <span class="each-category">Jewelry</span>
+                <span class="each-category">Sports & Outdoors</span>
+                <span class="each-category">Kids, Toys & Baby</span>
+            </div>
+            <div class="shipping-filter">
+                <span class="shipping-text">Free Shipping</span>
+                <div class="checkbox">
+                </div>
+            </div>
+            <div class="price-filter">
+                <span class="filter-title">Price</span>
+                <div class="slider-wrap">
+                    <span class="price-number">$ <span class="price-amount">2,500.00</span></span>
+                    <div class="slider-wrapper">
+                        <div class="fill"></div>
+                        <input type="range" min="10" max="2500" value="2500" step="10" class="price-slider">
+                    </div>
+                </div>
+            </div>
+            <div class="clear-filters">Clear Filters</div>
+        </div>
+
+        <div class="all-products-content">
+            <div class="products-header">
+                <span class="filters-activate">Filters</span>
+                <span class="current-products-info">
+                    Showing
+                    <span class="foundProducts">0</span>
+                    of 
+                    <span class="allDBProducts">0</span>
+                    products
+                </span>
+                <div class="divider-line"></div>
+                <div class="sorting-wrapper">
+                    <span class="little-text">Sort By</span>
+                    <div class="dropdown-parent">
+                        <span class="sortingCategory">Recommended</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>                
+                        <div class="dropdown">
+                            <span id="" class="each-sort">Recommended</span>
+                            <span id="name" class="each-sort">Name: A - Z</span>
+                            <span id="-name" class="each-sort">Name: Z - A</span>
+                            <span id="price" class="each-sort">Price: Low - High</span>
+                            <span id="-price" class="each-sort">Price: High - Low</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products-content">
+                
+            </div>
+        </div>
+
+        
+        <div class="filters-wrap-small-screen">
+            <div class="filters-relative">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                <div class="search-filter-small">
+                    <input class="search-input-small" type="text" placeholder="Search">
+                </div>
+                <div class="category-filter-small">
+                    <span class="filter-title-small">Category</span>
+                    <span class="each-category-small selected">All</span>
+                    <span class="each-category-small">Home</span>
+                    <span class="each-category-small">Electronics</span>
+                    <span class="each-category-small">Office</span>
+                    <span class="each-category-small">Garden</span>
+                    <span class="each-category-small">Beauty & Personal Care</span>
+                    <span class="each-category-small">Handmade</span>
+                    <span class="each-category-small">Furniture</span>
+                    <span class="each-category-small">Jewelry</span>
+                    <span class="each-category-small">Sports & Outdoors</span>
+                    <span class="each-category-small">Kids, Toys & Baby</span>
+                </div>
+                <div class="shipping-filter-small">
+                    <span class="shipping-text-small">Free Shipping</span>
+                    <div class="checkbox-small">
+                    </div>
+                </div>
+                <div class="price-filter-small">
+                    <span class="filter-title-small">Price</span>
+                    <div class="slider-wrap-small">
+                        <span class="price-number-small">$ <span class="price-amount-small">2,500.00</span></span>
+                        <div class="slider-wrapper-small">
+                            <div class="fill-small"></div>
+                            <input type="range" min="10" max="2500" value="2500" step="10" class="price-slider-small">
+                        </div>
+                    </div>
+                </div>
+                <div class="clear-filters-small">Clear Filters</div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="cart-contents">
+        <div class="cart-contents-relative"></div>
+    </div>
+
+    <div class="footer">
+        <div class="div1">
+            <span><a href="/home.html">What is Sell2You?</a></span>
+            <span><a href="/home.html">Partners</a></span>
+            <span><a href="/home.html">Privacy Policy</a></span>
+            <span><a href="/home.html">Sell on our platform</a></span>
+            <span><a href="/home.html">Careers</a></span>
+        </div>
+        <div class="div2">
+            <span>You can find us on</span>
+            <div>
+                <a target="_blank" href="https://facebook.com">
+                    <img src="./facebook.png">
+                </a>
+                <a target="_blank" href="https://instagram.com">
+                    <img src="./instagram.png">
+                </a>
+                <a target="_blank" href="https://tiktok.com">
+                    <img src="./tik-tok.png" >
+                </a>
+                <a target="_blank" href="https://whatsapp.com">
+                    <img src="./logo.png" >
+                </a>
+                <a target="_blank" href="https://x.com">
+                    <img src="./twitter.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
