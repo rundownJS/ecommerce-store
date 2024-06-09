@@ -34,7 +34,7 @@ In this e-commerce app, you can:
 
 ## Getting Started
 
-To try the app out simply clone this repository onto your machine and install all the dependencies. After that run ## npm start. 
+To try the app out simply clone this repository onto your machine and install all the dependencies. After that run ## Npm start
 Open up your localhost and check out the app.
 
 ## Technical Details
