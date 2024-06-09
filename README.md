@@ -34,7 +34,8 @@ In this e-commerce app, you can:
 
 ## Getting Started
 
-To start using the E-commerce App V1, simply navigate through the categories or use the search bar to find products. Add desired items to your cart and manage your selections as you shop.
+To try the app out simply clone this repository onto your machine and install all the dependencies. After that run ## npm start. 
+Open up your localhost and check out the app.
 
 ## Technical Details
 
