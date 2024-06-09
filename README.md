@@ -16,26 +16,29 @@ In this e-commerce app, you can:
 
 ## Features
 
-1. **Product Browsing**:
-   - Explore a wide range of products across different categories.
-   - Each category includes a variety of items to meet your needs.
+### Product Browsing:
 
-2. **Product Filters**:
-   - Apply filters to narrow down product selections.
-   - Search for specific products using keywords in the search bar.
+- Explore a wide range of products across different categories.
+- Each category includes a variety of items to meet your needs.
 
-3. **404 Error Page**:
-   - A user-friendly 404 error page is displayed when trying to access an endpoint that does not exist.
+### Product Filters:
 
-4. **Shopping Cart**:
-   - Add products to your shopping cart.
-   - Remove products from your shopping cart.
-   - Track the total cost of items in your cart in real-time.
+- Apply filters to narrow down product selections.
+- Search for specific products using keywords in the search bar.
+
+### 404 Error Page:
+
+- A user-friendly 404 error page is displayed when trying to access an endpoint that does not exist.
+
+### Shopping Cart:
+
+- Add products to your shopping cart.
+- Remove products from your shopping cart.
+- Track the total cost of items in your cart in real-time.
 
 ## Getting Started
 
-To try the app out simply clone this repository onto your machine and install all the dependencies. After that run ## NPM START
-Open up your localhost and check out the app.
+To try the app out, simply clone this repository onto your machine and install all the dependencies. After that, run `npm start`. Open up your localhost and check out the app.
 
 ## Technical Details
 
