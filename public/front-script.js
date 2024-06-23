@@ -1186,5 +1186,3 @@ if(localStorage.getItem("debug")){
 
 
 getProductData()
-
-console.log(localStorage)

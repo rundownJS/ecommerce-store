@@ -3,6 +3,9 @@ const Product = require("../model/product_model")
 //send an error file
 const path = require("path")
 
+//NEW FIX!!
+const he = require("he")
+
 const getAllProducts = async (req, res) =>{
     //getting all of the products + filtering
     
@@ -27,6 +30,11 @@ const getAllProducts = async (req, res) =>{
     if(numericFilter){
         //if the user provides a price filter
         //price less than (n)
+
+        //found the fic to the numeric bug
+        //there seemed to be tn HTML encoding that had to be decoded before being used in the request
+        const decodedNumericFilter = he.decode(numericFilter)
+
         const operatorMap = {
             //convering the less than to mongoose understandable variable
             "<=": "$lte"
@@ -35,7 +43,7 @@ const getAllProducts = async (req, res) =>{
         const regEx = /\b(<=)\b/g 
 
         //now we replace with the values
-        let filters = numericFilter.replace(regEx, (match) =>{
+        let filters = decodedNumericFilter.replace(regEx, (match) =>{
             return `-${operatorMap[match]}-`
         })
         
@@ -48,7 +56,8 @@ const getAllProducts = async (req, res) =>{
                 //and if we used it properly we pass it to the query object
                 queryObject[field] = { [ operator ]: Number(value) }
             }
-        }) 
+        })
+        
     }
 
     //default sort + custom sorting
