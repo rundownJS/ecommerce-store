@@ -1,0 +1,22 @@
+{
+  "name": "ecommerce-store",
+  "version": "1.0.0",
+  "description": "A fullstack ecommerce store website",
+  "main": "store.js",
+  "scripts": {
+    "start": "node store.js"
+  },
+  "author": "Ivo Sarvanski",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "he": "^1.2.0",
+    "helmet": "^7.1.0",
+    "mongoose": "^8.3.4",
+    "xss": "^1.0.15",
+    "xss-clean": "^0.1.4"
+  }
+}
